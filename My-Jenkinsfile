@@ -24,7 +24,7 @@ pipeline {
 
             steps {
 	      sshagent(['my_tomcat']) {
-              sh "scp -o StrictHostKeyChecking=no  target/maven-web-application.war  ec2-user@3.109.212.95:/opt/tomcat11/webapps"
+              sh "scp -o StrictHostKeyChecking=no  target/maven-web-application.war  ec2-user@3.110.175.131:/opt/tomcat10/webapps"
 	      }
          }
         }
